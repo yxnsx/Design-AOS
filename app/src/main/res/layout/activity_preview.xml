@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    tools:context=".PreviewActivity">
+
+    <ImageView
+        android:id="@+id/imageView_background"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/preview_background_android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:text="SOPT 솝커톤 아이디에이션"
+        android:textAppearance="@style/nanum_gothic_extra_bold_black_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_background" />
+
+    <TextView
+        android:id="@+id/textVIew_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2020년 11월 01일 부터 2020년 11월 14일"
+        android:textAppearance="@style/nanum_gothic_bold_brownish_grey_12"
+        app:layout_constraintEnd_toEndOf="@+id/textView_title"
+        app:layout_constraintStart_toStartOf="@+id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="9dp"
+        android:text="2020년 11월 1일부터 2021년 2월 28일까지 진행되는 프로젝트 아이디에이션 진행중"
+        android:textAppearance="@style/nanum_gothic_regular_brownish_grey_12"
+        app:layout_constraintEnd_toEndOf="@+id/textVIew_date"
+        app:layout_constraintStart_toStartOf="@+id/textVIew_date"
+        app:layout_constraintTop_toBottomOf="@+id/textVIew_date" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="START"
+        android:textAppearance="@style/nanum_gothic_bold_black_18"
+        android:background="@drawable/start_button_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
