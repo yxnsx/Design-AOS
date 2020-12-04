@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout_previewContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorLightGrey"
+    android:background="@color/pale_grey"
     tools:context=".PreviewActivity">
 
     <ImageView
@@ -17,6 +18,127 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/button_main"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="197dp"
+        android:layout_height="197dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_circleBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_circleBackground"
+        app:neumorph_backgroundColor="@color/pale_grey_two"
+        app:neumorph_shadowColorDark="@color/silver"
+        app:neumorph_shapeAppearance="@style/ShapeAppearance" />
+
+    <ImageView
+        android:id="@+id/imageView_circleBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/background_oval_outline"
+        android:padding="28dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_mindmap_add"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="+"
+        android:textAppearance="@style/nanum_gothic_extra_bold_warm_grey_18"
+        android:visibility="visible"
+        app:layout_constraintCircle="@+id/imageView_circleBackground"
+        app:layout_constraintCircleAngle="40"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_circleBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageView_circleBackground"
+        app:neumorph_backgroundColor="@color/pale_grey_two"
+        app:neumorph_shadowColorDark="@color/silver"
+        app:neumorph_shadowElevation="3dp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_mindmap_item_1"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="STORM"
+        android:textAppearance="@style/nanum_gothic_bold_warm_grey_12"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@+id/imageView_circleBackground"
+        app:layout_constraintCircleAngle="40"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_circleBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageView_circleBackground"
+        app:neumorph_backgroundColor="@color/pale_grey_two"
+        app:neumorph_shadowColorDark="@color/silver"
+        app:neumorph_shadowElevation="3dp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_mindmap_item_2"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="MONGLE"
+        android:textAppearance="@style/nanum_gothic_bold_warm_grey_12"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@+id/imageView_circleBackground"
+        app:layout_constraintCircleAngle="220"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_circleBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageView_circleBackground"
+        app:neumorph_backgroundColor="@color/pale_grey_two"
+        app:neumorph_shadowColorDark="@color/silver"
+        app:neumorph_shadowElevation="3dp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_mindmap_item_3"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Booster"
+        android:textAppearance="@style/nanum_gothic_bold_warm_grey_12"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@+id/imageView_circleBackground"
+        app:layout_constraintCircleAngle="310"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_circleBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageView_circleBackground"
+        app:neumorph_backgroundColor="@color/pale_grey_two"
+        app:neumorph_shadowColorDark="@color/silver"
+        app:neumorph_shadowElevation="3dp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_mindmap_item_4"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="PlacePic"
+        android:textAppearance="@style/nanum_gothic_bold_warm_grey_12"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@+id/imageView_circleBackground"
+        app:layout_constraintCircleAngle="150"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_circleBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageView_circleBackground"
+        app:neumorph_backgroundColor="@color/pale_grey_two"
+        app:neumorph_shadowColorDark="@color/silver"
+        app:neumorph_shadowElevation="3dp" />
 
     <TextView
         android:id="@+id/textView_title"
@@ -60,9 +182,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/start_button_android"
         android:text="START"
         android:textAppearance="@style/nanum_gothic_bold_black_18"
-        android:background="@drawable/start_button_android"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
