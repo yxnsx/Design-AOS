@@ -29,18 +29,6 @@ android {
 }
 
 dependencies {
-    // Wheel View (https://github.com/LukeDeighton/WheelView)
-    implementation 'com.github.lukedeighton:wheelview:0.4.2'
-
-    // ViewModel
-    def lifecycle_version = "2.2.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-
-    // activity-ktx (Androidx kotlin 종속 라이브러리)
-    // Activity에서 ViewModel을 간단하게 생성하기 위해 추가
-    def activity_version = "1.1.0"
-    implementation "androidx.activity:activity-ktx:$activity_version"
-
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
