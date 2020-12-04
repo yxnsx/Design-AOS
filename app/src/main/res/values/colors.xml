@@ -6,5 +6,9 @@
 
     <color name="white">#ffffff</color>
     <color name="brownish_grey">#696969</color>
+    <color name="warm_grey">#7b7b7b</color>
+    <color name="pale_grey">#f3f3fa</color>
+    <color name="pale_grey_two">#eff1fa</color>
+    <color name="silver">#d4d4dd</color>
     <color name="point_black">#424242</color>
 </resources>
