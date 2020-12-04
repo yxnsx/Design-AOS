@@ -11,32 +11,44 @@
     <!--textAppearance-->
     <style name="nanum_gothic_extra_bold_black_18" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColor">@color/point_black</item>
         <item name="android:fontFamily">@font/nanum_gothic_extra_bold</item>
     </style>
 
     <style name="nanum_gothic_bold_black_18" parent="TextAppearance.AppCompat">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColor">@color/point_black</item>
         <item name="android:fontFamily">@font/nanum_gothic_bold</item>
     </style>
 
     <style name="nanum_gothic_bold_brownish_grey_18" parent="TextAppearance.AppCompat">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textColor">@color/brownish_grey</item>
         <item name="android:fontFamily">@font/nanum_gothic_bold</item>
     </style>
 
     <style name="nanum_gothic_bold_brownish_grey_12" parent="TextAppearance.AppCompat">
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textColor">@color/brownish_grey</item>
         <item name="android:fontFamily">@font/nanum_gothic_bold</item>
     </style>
 
     <style name="nanum_gothic_regular_brownish_grey_12" parent="TextAppearance.AppCompat">
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textColor">@color/brownish_grey</item>
         <item name="android:fontFamily">@font/nanum_gothic_regular</item>
+    </style>
+
+    <style name="nanum_gothic_extra_bold_warm_grey_18" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+        <item name="android:fontFamily">@font/nanum_gothic_extra_bold</item>
+    </style>
+
+    <style name="nanum_gothic_bold_warm_grey_12" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+        <item name="android:fontFamily">@font/nanum_gothic_bold</item>
     </style>
 
 </resources>
