@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView_circleBackground"
         app:neumorph_backgroundColor="@color/pale_grey_two"
         app:neumorph_shadowColorDark="@color/silver"
-        app:neumorph_shapeAppearance="@style/ShapeAppearance" />
+        app:neumorph_shapeAppearance="@style/shapeAppearance_oval" />
 
     <ImageView
         android:id="@+id/imageView_circleBackground"
