@@ -51,4 +51,10 @@
         <item name="android:fontFamily">@font/nanum_gothic_bold</item>
     </style>
 
+    <!--shapeAppearance-->
+    <style name="shapeAppearance_oval" parent="Widget.AppCompat.TextView">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">100dp</item>
+    </style>
+
 </resources>
