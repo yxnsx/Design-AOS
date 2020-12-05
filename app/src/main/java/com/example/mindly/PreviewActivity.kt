@@ -1,35 +1,40 @@
 package com.example.mindly
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
+import com.example.mindly.mindmap.MindMapActivity
 import kotlinx.android.synthetic.main.activity_preview.*
 import soup.neumorphism.NeumorphButton
 
 class PreviewActivity : AppCompatActivity() {
     private lateinit var itemButtons: List<NeumorphButton>
-    private var count = 0
+    private var itemCount = 3
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_preview)
 
-        btn_mindmap_add.setOnClickListener(activityOnClickListner)
+        btn_mindmap_add.visibility = View.GONE
+        button_start.setOnClickListener(activityOnClickListener)
         itemButtons = listOf(
             btn_mindmap_item_1,
             btn_mindmap_item_2,
             btn_mindmap_item_3,
             btn_mindmap_item_4
         )
+        setCircleLayout()
+        checkVisibility()
     }
 
-    private val activityOnClickListner = View.OnClickListener {
+    private val activityOnClickListener = View.OnClickListener {
         when (it.id) {
-            R.id.btn_mindmap_add -> {
-                setCircleLayout()
-                checkVisibility()
+            R.id.button_start -> {
+                val intent = Intent(this, MindMapActivity::class.java)
+                startActivity(intent)
             }
         }
     }
@@ -40,7 +45,7 @@ class PreviewActivity : AppCompatActivity() {
         val set = ConstraintSet()
         set.clone(constraintLayout)
 
-        when (count) {
+        when (itemCount) {
             0 -> angle = 230F
             1 -> angle = 330F
             2 -> angle = 140F
@@ -52,15 +57,13 @@ class PreviewActivity : AppCompatActivity() {
             angle
         )
         set.applyTo(constraintLayout)
-        count++
     }
 
     private fun checkVisibility() {
         itemButtons.forEachIndexed { index, _ ->
-            if (index < count) {
+            if (index < itemCount) {
                 itemButtons[index].visibility = View.VISIBLE
             }
         }
-        if (count > 3) btn_mindmap_add.visibility = View.GONE
     }
 }
